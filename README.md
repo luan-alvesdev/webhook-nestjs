@@ -113,3 +113,20 @@ curl -X POST http://localhost:3000/webhooks/test/order-updated
 
 # Cancel the first order
 curl -X POST http://localhost:3000/webhooks/test/order-cancelled
+
+
+
+Exemplo de Uso
+Criar um pedido:
+bash
+curl -X POST http://localhost:3000/webhooks/test/order-created
+Listar pedidos:
+bash
+curl http://localhost:3000/webhooks/test/orders
+Atualizar um pedido:
+bash
+curl -X POST http://localhost:3000/webhooks/test/order-updated
+Cancelar um pedido:
+bash
+curl -X POST http://localhost:3000/webhooks/test/order-cancelled
+Este é um exemplo básico que pode ser expandido para integrar com sistemas de pagamento, estoque, notificações por e-mail, etc.
